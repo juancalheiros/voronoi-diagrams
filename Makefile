@@ -4,10 +4,13 @@ setup:
 build-docker:
 	@docker build -t voronoi .
 
+down-docker:
+	@docker-compose down --rmi local
+
 build-run:
-	@docker-compose up --build; docker-compose down --rmi local
+	@docker-compose up --build; make down-docker
 
 run:
-	@docker-compose run --rm
+	@docker-compose up
 
 .PHONY: setup
