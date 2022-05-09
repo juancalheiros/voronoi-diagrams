@@ -84,7 +84,7 @@ def diagrams_of_voronoi(coordinates):
   
   display_voronoi(POINTS_X, POINTS_Y, COLOR_BLUE)
   
-  save_image
+  save_image()
   
   plt.show()
 
