@@ -1,7 +1,7 @@
 setup:
 	@python3 -m pip install -r requirements.txt
 
-build-docker:
+build:
 	@docker build -t voronoi .
 
 down-docker:
