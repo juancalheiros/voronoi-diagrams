@@ -1,16 +1,7 @@
 setup:
 	@python3 -m pip install -r requirements.txt
 
-build:
-	@docker build -t voronoi .
-
-down-docker:
-	@docker-compose down --rmi local
-
-build-run:
-	@docker-compose up --build; make down-docker
-
 run:
-	@docker-compose up
+	@python3 app.py --hosp=${hosp}
 
 .PHONY: setup
