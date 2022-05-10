@@ -19,8 +19,8 @@ def display_delaunay(points_x, points_y, points_indices, COLOR_POINT):
 
 
 def adjust_limit_axis(min_x, max_x, min_y, max_y):
-  plt.xlim((min_x*MARGIN, max_x*MARGIN)) 
-  plt.ylim((min_y*MARGIN, max_y*MARGIN))
+  plt.xlim((min_x*0.996, max_x*1.001)) 
+  plt.ylim((min_y*0.9997, max_y*1.0005))
 
 
 def get_valid_region_voronoi(voronoi_regions):
