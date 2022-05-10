@@ -2,12 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d, Delaunay
 
-from settings import COORDINATES, QNTD_POINTS, SCALA, MARGIN, PATH_SAVE
-
-
-#COORDINATES = np.random.rand(QNTD_POINTS, 2)*SCALA
-COLOR_BLUE = 'blue'
-COLOR_BLACK = 'black'
 
 
 def display_voronoi(points_x, points_y, COLOR_POINT):
@@ -47,9 +41,6 @@ def get_min_points(coordinates):
   return min(i[0] for i in coordinates) , min(i[1] for i in coordinates)
 
 
-def save_image():
-  plt.savefig(PATH_SAVE)
-
 
 def limits_axis(max_x, max_y):
   WIDTH = max_x*2
@@ -58,7 +49,8 @@ def limits_axis(max_x, max_y):
 
 
 def diagrams_of_voronoi(coordinates):
-
+  COLOR_BLUE = 'blue'
+  COLOR_BLACK = 'black'
   max_x, max_y = get_max_points(coordinates)
   min_x, min_y = get_min_points(coordinates)
   limits = limits_axis(max_x, max_y)
@@ -84,10 +76,4 @@ def diagrams_of_voronoi(coordinates):
   
   display_voronoi(POINTS_X, POINTS_Y, COLOR_BLUE)
   
-  save_image()
-  
   plt.show()
-
-
-
-diagrams_of_voronoi(COORDINATES)
