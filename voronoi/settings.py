@@ -14,16 +14,13 @@ hosp_camp_leblon=[68.1952, 745.7586]
 hosp_camp_riocentro=[66.2843, 745.7806]
 hosp_camp_parque_atletas=[66.3299, 745.7940]
 
-#full
+
 FULL_HOSPITAL = os.environ.get('FULL_HOSPITAL', [ hosp_acari, hosp_salgado_filho, hosp_fundao, hosp_bonsucesso, hosp_jesus, hosp_pedro_ernesto, hosp_camp_maracana, hosp_souza_aguiar, hosp_miguel_couto, hosp_camp_leblon, hosp_camp_riocentro, hosp_camp_parque_atletas])
 
-#hosp
 HOSPITAL = os.environ.get('HOSPITAL', [ hosp_acari, hosp_salgado_filho, hosp_fundao, hosp_bonsucesso, hosp_jesus, hosp_pedro_ernesto, hosp_souza_aguiar, hosp_miguel_couto])
-
 
 QNTD_POINTS = os.environ.get('QNTD_POINTS', 20)
 
 SCALA = os.environ.get('SCALA', 100000)
 
-PATH_SAVE = OPACITY = os.environ.get('PATH_SAVE','./voronoi/images/diagram_of_voronoi.png')
 
