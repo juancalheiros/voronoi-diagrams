@@ -15,7 +15,7 @@ hosp_camp_riocentro=[66.2843, 745.7806]
 hosp_camp_parque_atletas=[66.3299, 745.7940]
 
 
-FULL_HOSPITAL = os.environ.get('FULL_HOSPITAL', [ hosp_acari, hosp_salgado_filho, hosp_fundao, hosp_bonsucesso, hosp_jesus, hosp_pedro_ernesto, hosp_camp_maracana, hosp_souza_aguiar, hosp_miguel_couto, hosp_camp_leblon, hosp_camp_riocentro, hosp_camp_parque_atletas])
+FULL_HOSPITAL = os.environ.get('FULL_HOSPITAL', [ hosp_acari, hosp_salgado_filho, hosp_fundao, hosp_bonsucesso, hosp_jesus, hosp_pedro_ernesto, hosp_camp_maracana, hosp_souza_aguiar,fiocrus, hosp_miguel_couto, hosp_camp_leblon, hosp_camp_riocentro, hosp_camp_parque_atletas])
 
 HOSPITAL = os.environ.get('HOSPITAL', [ hosp_acari, hosp_salgado_filho, hosp_fundao, hosp_bonsucesso, hosp_jesus, hosp_pedro_ernesto, hosp_souza_aguiar, hosp_miguel_couto])
 
